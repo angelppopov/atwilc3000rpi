@@ -2786,9 +2786,9 @@ static void handle_power_management(struct work_struct *work)
 
 	wid.id = WID_POWER_MANAGEMENT;
 
-	if (pm_param->enabled)
-		power_mode = MIN_FAST_PS;
-	else
+//	if (pm_param->enabled)
+//		power_mode = MIN_FAST_PS;
+//	else
 		power_mode = NO_POWERSAVE;
 	PRINT_INFO(vif->ndev, HOSTINF_DBG, "Handling power mgmt to %d\n",
 		   power_mode);
